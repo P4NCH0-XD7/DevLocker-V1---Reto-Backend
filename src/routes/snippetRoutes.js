@@ -9,8 +9,7 @@ import { snippetValidator } from '../validators/snippetValidators.js';
 import { protect } from '../middlewares/authMiddleware.js';
 
 const router = express.Router();
-
-// Todas las rutas aquí están protegidas y requieren autenticación
+//proteccion de rutas
 router.use(protect);
 
 router

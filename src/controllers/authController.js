@@ -36,11 +36,7 @@ export const registerUser = asyncHandler(async (req, res, next) => {
   }
 });
 
-/**
- * @desc    Autenticar un usuario y obtener token
- * @route   POST /api/v1/auth/login
- * @access  Public
- */
+
 export const loginUser = asyncHandler(async (req, res, next) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {

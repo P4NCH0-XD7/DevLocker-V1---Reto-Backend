@@ -3,11 +3,9 @@ import asyncHandler from '../utils/asyncHandler.js';
 import ErrorResponse from '../utils/errorResponse.js';
 import User from '../models/User.js';
 
-// Proteger rutas
 export const protect = asyncHandler(async (req, res, next) => {
   let token;
 
-  // Leer el token JWT del encabezado 'Authorization'
   if (
     req.headers.authorization &&
     req.headers.authorization.startsWith('Bearer')
