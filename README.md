@@ -21,20 +21,20 @@ La base de datos se realizo con MongoDB Atlas
 # Autenticación ( /auth)
 
 -   `POST /auth/register: Registrar un nuevo usuario
-    -   Body: { "nombre": "Tu Nombre",
-                "email": "tu@email.com",
-                "password": "tu_password" }
+    -   Body: { "nombre": "Nombre",
+                "email": "ejemplo@email.com",
+                "password": "contraseña" }
 
 -   `POST /auth/login: Iniciar sesion
-    -   Body:{"email": "tu@email.com",
-             "password": "tu_password" }
+    -   Body:{"email": "ejemplo@email.com",
+             "password": "contraseña" }
 
 # Snippets ( /snippets)
 
 Nota: Todos estos endpoints requieren un token de autenticacion, asi que se debe incluir el token jwt en el encabezado Authorization de las solicitudes como Bearer <token>
 
 -   POST /snippets: Crear un nuevo snippet
-        Body: { "title": "Mi Snippet",
+        Body: { "title": "Snippet",
                 "language": "javascript",
                 "code": "console.log('Hola');",
                 "tags": ["ejemplo"] }
