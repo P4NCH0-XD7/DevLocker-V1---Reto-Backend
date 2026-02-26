@@ -11,6 +11,7 @@ La base de datos se realizo con MongoDB Atlas
 
 # Ejecutar la Aplicacion
 
+    Instancias y deoendencias: npm install
     npm run dev || npm start
 
 
